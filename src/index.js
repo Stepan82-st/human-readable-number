@@ -8,7 +8,7 @@ module.exports = function toReadable (number) {
       result = 'zero';
   }
   else if  (number < 20) {
-      result = ones[number];
+      result = ones[number-1];
   }
   else if(number > 20 && number < 100){
     result = tens[parseInt(numString.charAt(0))] + ' ' + ones[parseInt(numString.charAt(1))-1]
